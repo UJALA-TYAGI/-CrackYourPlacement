@@ -6,7 +6,7 @@ public:
         
         int ans = -1;
         k = k-1;
-        for(int i =2; i<=n && k>0; i++){
+        for(int i =2; i<=n/2 && k>0; i++){
             
             if (n%i==0){
                 k--;
@@ -17,6 +17,8 @@ public:
             }
             
         }
+        
+        if(k==1) ans = n;
         
         return ans;
         
